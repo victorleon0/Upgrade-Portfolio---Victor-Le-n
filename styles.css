@@ -1,0 +1,302 @@
+html,
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #e1b986;
+  width: 100vw;
+  height: 80px;
+  -webkit-box-shadow: 0 4px 2px -2px gray;
+          box-shadow: 0 4px 2px -2px gray;
+}
+
+.nav__logo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 70px;
+  padding: 0;
+  top: 5px;
+  left: 40px;
+}
+
+.nav__items {
+  position: relative;
+  right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  background-color: #e1b986;
+  bottom: 0px;
+}
+
+.nav__items .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-decoration: none;
+  color: black;
+  background-color: #e1b986;
+  padding: 20px;
+  opacity: 70%;
+}
+
+.nav__button {
+  position: relative;
+  top: 20px;
+  right: 50px;
+  width: 120px;
+  height: 40px;
+  display: inline;
+  border-radius: 30px;
+  padding-bottom: 0px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  opacity: 80%;
+}
+
+.nav__button:hover {
+  background-color: rgba(255, 179, 0, 0.891);
+  border: 2px solid #363434;
+}
+
+.portada {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portada__textos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 80px;
+}
+
+.portada__textos h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  font-size: 40px;
+}
+
+.portada__textos h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: grey;
+}
+
+.portada__imagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  height: 400px;
+}
+
+.scrollicon {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 20px;
+  right: 20px;
+  max-inline-size: 100%;
+  min-block-size: var(--tds-icon--size);
+  min-inline-size: var(--tds-icon--size);
+  overflow: hidden;
+  -webkit-transition: color .33s ease;
+  transition: color .33s ease;
+}
+
+.quehago {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: whitesmoke;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 15px;
+}
+
+.quehago__fsd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid grey;
+  border-radius: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+}
+
+.quehago__fsd img {
+  width: 100px;
+  height: 100px;
+}
+
+.quehago__fsd h5 {
+  font-size: 20px;
+}
+
+.quehago__fsd p {
+  font-size: 16px;
+}
+
+.quehago__uxdesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid grey;
+  border-radius: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+}
+
+.quehago__uxdesign img {
+  width: 100px;
+  height: 100px;
+}
+
+.quehago__uxdesign h5 {
+  font-size: 20px;
+}
+
+.quehago__uxdesign p {
+  font-size: 16px;
+}
+
+.quehago__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid grey;
+  border-radius: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+}
+
+.quehago__video img {
+  width: 100px;
+  height: 100px;
+}
+
+.quehago__video h5 {
+  font-size: 20px;
+}
+
+.quehago__video p {
+  font-size: 16px;
+}
+
+.quehago__account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid grey;
+  border-radius: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+}
+
+.quehago__account img {
+  width: 100px;
+  height: 100px;
+}
+
+.quehago__account h5 {
+  font-size: 20px;
+}
+
+.quehago__account p {
+  font-size: 16px;
+}
+/*# sourceMappingURL=styles.css.map */

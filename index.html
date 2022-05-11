@@ -4,38 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Víctor León - Full Stack Developer</title>
 </head>
 <body>
-    <header>
-        <h1>Víctor León - Full Stack Developer</h1>
-        <a href="#quiensoy">¿Quien soy?</a>
-        <a href="#quehago">¿Que hago?</a>
-        <a href="#misproyectos">Mis Proyectos</a>
-        <a href="#opiniones">Opiniones</a>
-        <a href="#contacto">Contacto</a>
-    </header>
-    <nav>
-        <div class:"quiensoy">
-            <h2><strong>¿Quien soy?</strong></h2>
-            <article>
-                <h3>Hola! Mi nombre es Víctor León</h3>
-                <p>Full Stack Developer, UX/UI Designer & Account Manager</p>
-                <img height=200px src="http://victorleondesign.com\/wp-content\/uploads\/2021\/08\/portada-2-1280x1475.png"
-            </article>
+    <nav class="nav">
+        <div class="nav__logo">
+        <img class="logosvg" src="/imágenes/logotransparente.svg" alt="Logo VL">
         </div>
-        <div class="quehago">
-            <h2><strong>¿Que hago?</strong></h2>
-            <ul>
-                <li><strong>Web & App Development</strong></li>
-                <p>Desarrollo de aplicaciones y páginas web</p>
-                <li><strong>UX/UI Design</strong></li>
-                <p>Diseño de experiencia de usuario. Human Center Design</p>
-                <li><strong>Account Manager & Events</strong></li>
-                <p>Gestión de cuentas, clientes y organización de eventos</p>
-            </ul>            
+        <div class="nav__items">
+        <a class="items" href="#quehago">¿Que hago?</a>
+        <a class="items" href="#misproyectos">Mis Proyectos</a>
+        <a class="items" href="#curriculum">Currículum</a>
         </div>
-        <div class="misproyectos">
+        <button a class="nav__button" href="#contactbutton">Contacto</button>
+    </nav>
+    <div class="portada">
+        <div class="portada__textos">
+            <h1>I'm Víctor León</h1>
+            <h3>Full Stack Developer | UX/UI Designer | Account Manager</h3>
+        </div>
+        <div class="portada__imagen">
+            <img  class="portada__imagen" src="/Imágenes/Portada.png">
+        </div>
+    </div>
+        <img class="scrollicon" src="https://cdn-icons-png.flaticon.com/512/3305/3305838.png">
+    
+    <div class="quehago" id="quehago">
+        <div class="quehago__fsd">
+            <img class="foto1" src="https://">
+            <h5>Full Stack Development</h5>
+            <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, </p>
+        </div>
+        <div class="quehago__uxdesign">
+            <img class="foto2" src="https://">
+            <h5>UX/UI Design</h5>
+            <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, </p>
+        </div>
+        <div class="quehago__video">
+            <img class="foto3" src="https://">
+            <h5>Video Editor</h5>
+            <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, </p>
+        </div>
+        <div class="quehago__account">
+            <img class="foto4" src="https://">
+            <h5>Account Manager</h5>
+            <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, </p>
+        </div>
+    </div>
+        <div class="misproyectos" id="misproyectos">
             <h2>Mis Proyectos</strong></h2>
             <ul>
                 <li><strong>Design Manager at NIW.ES</strong></li>
@@ -47,15 +65,18 @@
                 <p>ERNST AND YOUNG, UNA FIRMA MULTINACIONAL DE SERVICIOS PROFESIONALES, RECIENTEMENTE HA INGRESADO AL MUNDO DE LAS SOLUCIONES BLOCKCHAIN. CON ESTA SOLUCIÓN, TODAS LAS EMPRESAS INVOLUCRADAS EN UNA OPERACIÓN LOGÍSTICA PODRÁN VER UN HISTORIAL DIGITAL DE TRANSACCIONES Y, DEBIDO A LA NATURALEZA DE BLOCKCHAIN, SE ASEGURARÁN CONSTANTEMENTE DE QUE NO SE HAYAN MODIFICADO NI FALSIFICADO REGISTROS. EN GENERAL, ESTÁN HACIENDO GRANDES PROGRESOS EN EL CAMPO, PERO AHORA NECESITAN AYUDA DESDE LA PERSPECTIVA DE LA EXPERIENCIA DEL USUARIO PARA ASEGURARSE DE QUE SU SOLUCIÓN SEA INTUITIVA Y FÁCIL DE USAR PARA LOS CONDUCTORES, TRANSPORTISTAS Y OTRAS PERSONAS INVOLUCRADAS EN EL PROCESO.</p>
             </ul>
         </div>
-        <div id="opiniones">
-            <h2><strong>Opiniones</strong></h2>
-            <oll>
-                <li>Opinion - Nombre Apellidos</li>
-                <li>Opinion - Nombre Apellidos</li>
-                <li>Opinion - Nombre Apellidos</li>
-            </ol>
+        <div class="curriculum" id="curriculum">
+            <h2><strong>¿Que hago?</strong></h2>
+            <ul>
+                <li><strong>Web & App Development</strong></li>
+                <p>Desarrollo de aplicaciones y páginas web</p>
+                <li><strong>UX/UI Design</strong></li>
+                <p>Diseño de experiencia de usuario. Human Center Design</p>
+                <li><strong>Account Manager & Events</strong></li>
+                <p>Gestión de cuentas, clientes y organización de eventos</p>
+            </ul>            
         </div>
-        <div class="contacto">
+        <div class="contacto" id="contactbutton">
             <h2><strong>Contacto</strong></h2>
             <h3>Déjanos tus datos y te contactaremos lo antes posible</h3>
             <form>

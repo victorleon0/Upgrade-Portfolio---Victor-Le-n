@@ -1,3 +1,201 @@
-html, body, footer{
+@import "./responsive";
+
+html,
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(225, 185, 134);
+    width:100vw;
+    height:80px;
+    box-shadow: 0 4px 2px -2px gray;
+    &__logo {
+        position: relative;
+        display: flex;
+        flex:1;
+        height: 70px;
+        padding: 0;
+        top: 5px;
+        left:40px;
+    }
+    &__items{
+        position: relative;
+        right: 50px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: rgb(225, 185, 134);
+        bottom: 0px;
+        & .items{
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+            color: black;
+            background-color: rgb(225, 185, 134);
+            padding: 20px;
+            opacity: 70%;
+        }
+    }
+    &__button {
+        position: relative;
+        top: 20px;
+        right: 50px;
+        width: 120px;
+        height: 40px;
+        display: inline;
+        border-radius: 30px;
+        padding-bottom: 0px;
+        border: 1px solid black;
+        cursor: pointer;
+        font-size: 18px;
+        text-align: center;
+        opacity: 80%;
+
+        &:hover {
+            background-color: rgba(255, 179, 0, 0.891);
+            border: 2px solid rgb(54, 52, 52);
+
+        }
+    }
+
+}
+.portada{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    align-items: center;
+    &__textos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        h1{
+            display: flex;
+            color: black;
+            font-size: 40px;
+            }
+        h3{
+            display: flex;
+            color: grey
+        }
+
+    }
+    &__imagen {
+        display: flex;
+        width: 400px;
+        height: 400px;
+                   
+        }
+        
+        
+        
     
+    
+    
+}
+.scrollicon {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 20px;
+    right: 20px;
+    max-inline-size: 100%;
+    min-block-size: var(--tds-icon--size);
+    min-inline-size: var(--tds-icon--size);
+    overflow: hidden;
+    transition: color .33s ease;
+}
+.quehago {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    gap: 15px;
+    &__fsd{
+        display: flex;
+        border: 2px solid grey;
+        border-radius: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        h5 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    &__uxdesign{
+        display: flex;
+        border: 2px solid grey;
+        border-radius: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        h5 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    &__video{
+        display: flex;
+        border: 2px solid grey;
+        border-radius: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        h5 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    &__account{
+        display: flex;
+        border: 2px solid grey;
+        border-radius: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        h5 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
 }
