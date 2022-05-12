@@ -113,18 +113,31 @@ body {
     overflow: hidden;
     transition: color .33s ease;
 }
-.quehago {
+.servicios {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: whitesmoke;
     justify-content: center;
-    padding-top: 250px;
+    padding-top: 50px;
     width: 100vw;
     height: 100vh;
-    gap: 15px;
+    gap: 20px;
+
+    .titulos {
+        position: flex;
+        width: 100vw;
+        height: 20px;
+        text-align: center;
+        padding-top: 50px;
+        h2 {
+            font-size: 50px;
+
+        }
+    }
     &__fsd{
         display: flex;
+        flex-direction: row;
         border: 2px solid grey;
         border-radius: 30px;
         flex-direction: column;
@@ -143,6 +156,7 @@ body {
         }
         p {
             font-size: 12px;
+            text-align: center;
         }
     }
     &__uxdesign{
@@ -218,22 +232,37 @@ body {
     flex-wrap: wrap;
     background-color: whitesmoke;
     justify-content: center;
+    padding-top: 50px;
     width: 100vw;
     height: 100vh;
-    gap: 15px;
+    gap: 30px;
+    .titulos {
+        position: flex;
+        width: 100vw;
+        height: 20px;
+        text-align: center;
+        padding-top: 50px;
+        margin-bottom:100px;
+        h2 {
+            font-size: 50px;
+        }
+    }
     &__proyecto1{
         display: flex;
+        flex-direction: row;
         border: 2px solid grey;
         border-radius: 30px;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 30px;
+        width: 200px;
+        height: 200px;
         img {
             display: flex;
             flex-direction: column;
-            width: 300px;
-            height: 300px;
+            width: 100px;
+            height: 100px;
         }
         h5 {
             font-size: 20px;
@@ -244,12 +273,15 @@ body {
     }
     &__proyecto2{
         display: flex;
+        flex-direction: row;
         border: 2px solid grey;
         border-radius: 30px;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 30px;
+        width: 200px;
+        height: 200px;
         img {
             width: 100px;
             height: 100px;
@@ -263,12 +295,15 @@ body {
     }
     &__proyecto3{
         display: flex;
+        flex-direction: row;
         border: 2px solid grey;
         border-radius: 30px;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 30px;
+        width: 200px;
+        height: 200px;
         img {
             width: 100px;
             height: 100px;
@@ -282,12 +317,15 @@ body {
     }
     &__proyecto4{
         display: flex;
+        flex-direction: row;
         border: 2px solid grey;
         border-radius: 30px;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 30px;
+        width: 200px;
+        height: 200px;
         img {
             width: 100px;
             height: 100px;
@@ -301,12 +339,15 @@ body {
     }
     &__proyecto5{
         display: flex;
+        flex-direction: row;
         border: 2px solid grey;
         border-radius: 30px;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 30px;
+        width: 200px;
+        height: 200px;
         img {
             width: 100px;
             height: 100px;
@@ -320,12 +361,15 @@ body {
     }
     &__proyecto6{
         display: flex;
+        flex-direction: row;
         border: 2px solid grey;
         border-radius: 30px;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 30px;
+        width: 200px;
+        height: 200px;
         img {
             width: 100px;
             height: 100px;
@@ -339,12 +383,15 @@ body {
     }
     &__proyecto7{
         display: flex;
+        flex-direction: row;
         border: 2px solid grey;
         border-radius: 30px;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 30px;
+        width: 200px;
+        height: 200px;
         img {
             width: 100px;
             height: 100px;
@@ -356,8 +403,5 @@ body {
             font-size: 16px;
         }
     }
-
-
-    
+   
 }
-
