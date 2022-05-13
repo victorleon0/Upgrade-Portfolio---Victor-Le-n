@@ -10,15 +10,15 @@
 </head>
 <body>
     <nav class="nav">
-        <div class="nav__logo">
-        <img class="logosvg" src="/imágenes/logotransparente.svg" alt="Logo VL" href="portada">
+        <a div class="nav__logo" href="#portada">
+        <img class="logosvg" src="/imágenes/logotransparente.svg" alt="Logo VL" href="#portada"></a>
         </div>
         <div class="nav__items">
         <a class="items" href="#servicios">Servicios</a>
         <a class="items" href="#misproyectos">Mis Proyectos</a>
         <a class="items" href="#curriculum">Currículum</a>
         </div>
-        <button a class="nav__button" href="#contactbutton">Contacto</button>
+        <a button class="nav__button" href="#formulariocontacto">Contacto</a>
     </nav>
     <div class="portada" id="portada">
         <div class="portada__textos">
@@ -92,32 +92,44 @@
         </div>
         
     </div>
-        <div class="curriculum" id="curriculum">
-            <h2><strong>¿Que hago?</strong></h2>
-            <ul>
-                <li><strong>Web & App Development</strong></li>
-                <p>Desarrollo de aplicaciones y páginas web</p>
-                <li><strong>UX/UI Design</strong></li>
-                <p>Diseño de experiencia de usuario. Human Center Design</p>
-                <li><strong>Account Manager & Events</strong></li>
-                <p>Gestión de cuentas, clientes y organización de eventos</p>
-            </ul>            
-        </div>
-        <div class="contacto" id="contactbutton">
-            <h2><strong>Contacto</strong></h2>
-            <h3>Déjanos tus datos y te contactaremos lo antes posible</h3>
-            <form>
-                <fieldset>
-                <legend>Datos de contacto</legend>
+    <div class="curriculum" id="curriculum">
+            <div class="titulos"><h2 class=>Currículum</h2></div>
+            <div class="curriculum__boxcv">
+                <div class="fotocurriculum">
+                <img class="fotocv" width=400px src="http://victorleondesign.com/wp-content/uploads/2021/08/pie-de-pagina-BN-1-227x300-1.png"></div>
+                <div class="textocurriculum">
+                <p>1990 – Nací en una pequeña localidad de la provincia de Palencia.</p>
+                <p>2009 – 2016 – Técnico en Información y Comercialización Turísticas. Agente de viajes Mostrador, Online y consultor de viajes del ministerio del interior</p>
+                <p>2016 – 2019 – Project & Account Manager at eventbrite (ticketea)</p>
+                <p>2019 – 2020 Máster UX Design at Talent Garden Madrid.</p>
+                <p>2020 - Diseñador UX/UI en Orange by Braintrust Consulting Services. </p>                   
+                <p>2021 – Web design, UX/UI, Graphic design, video editor and camera at NIW.ES</p>
+                    
+                <p><strong>ACTUALMENTE:</strong>
+                <P>He trabajado en diversos proyectos y para empresas como ticketea, Eventbrite, Globalia, Carrefour Viajes, El País, Pernod Ricard, Ifema e incluso en el ministerio del interior.
+                Finalmente decidí dar un giro a mi carrera para estudiar un Máster en Diseño digital centrado en la experiencia de usuario donde tuve la suerte de realizar proyectos para importantes empresas como EY! en Viena resolviendo proyectos con la tecnología blockchain, Renfe, Telefónica y un estudio completo del producto Acciona motosharing y su APP de servicio para motos eléctricas compartidas.
+                Tras trabajar aproximadamente 1 año como diseñador UX/UI en Orange, con una metodología Agile, decidí embarcarme en el proyecto de NIW.es donde tuve la suerte de realizar el Research y creación de un nuevo Customer Journey con el método Design thinking, Guerrilla testing, Entrevistas cualitativas y cuantitativas, Diseño Gráfico, diseño de creatividades Social & Display, diseño de presentaciones y vídeos corporativos, grabación y edición de vídeopruebas en concesionarios y otros contenidos digitales de marca.
+                Aprendí el uso de herramientas de diseño como Adobe XD, Illustrator, After Effects, Premiere y Photoshop. 
+                Por último, acabo de terminar un máster de Full Stack Development, con el que he aprendido las últimas y más destacadas tecnologías con las que poder desarrollar productos y aplicaciones completas. 
+                </p>
+                <button type="button" class="cvbutton" link="http://http://victorleondesign.com/wp-content/uploads/2021/08/CV-Victor-Leon-Designer-SEPT-UX-UI-.pdf">Descarga mi CV</button>
+                </div>
+            </div>
+    </div>
+    <div class="formulariocontacto" id="formulariocontacto">
+        <div class="tituloscontacto"><h2 class=>Contacta conmigo</h2>
+        <h3>Introduce tus datos y te contactaremos lo antes posible</h3></div>
+            <form class="formulario">
+                
                 <input type="text" name="Nombre" id="nombre" placeholder="Nombre"><br>
                 <input type="text" name="Apellidos" id="apellidos" placeholder="Apellidos"><br>
                 <input type="number" name="Teléfono" id="teléfono" placeholder="Teléfono móvil"><br>
                 <input type="text" name="Email" id="email" placeholder="Email de contacto"><br>
                 <input type="textarea" name="Comentario" id="email" placeholder="¿En qué te puedo ayudar?"><br>
-                <button type="submit">Enviar</button>
-                </fieldset>
+                <button class="envio" type="submit">Contactar</button>
+                
             </form>
-        </div>
+    </div>
     </nav>
     <footer>
         <h4>Sígueme en Redes Sociales</h4>

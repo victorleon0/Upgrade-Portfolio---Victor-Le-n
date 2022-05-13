@@ -67,18 +67,19 @@ body {
 
 .nav__button {
   position: relative;
-  top: 20px;
+  top: 10px;
   right: 50px;
-  width: 120px;
+  width: 150px;
   height: 40px;
   display: inline;
   border-radius: 30px;
-  padding-bottom: 0px;
+  padding-top: 20px;
   border: 1px solid black;
   cursor: pointer;
   font-size: 18px;
   text-align: center;
   opacity: 80%;
+  text-decoration: none;
 }
 
 .nav__button:hover {
@@ -344,7 +345,7 @@ body {
           justify-content: center;
   padding-top: 50px;
   width: 100vw;
-  height: 100vh;
+  height: 800px;
   gap: 30px;
 }
 
@@ -618,5 +619,170 @@ body {
 
 .misproyectos__proyecto7 p {
   font-size: 16px;
+}
+
+.curriculum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: whitesmoke;
+}
+
+.curriculum .titulos {
+  position: flex;
+  width: 100vw;
+  height: 20px;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+.curriculum .titulos h2 {
+  font-size: 50px;
+}
+
+.curriculum .curriculum__boxcv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.curriculum .curriculum__boxcv .fotocurriculum {
+  position: relative;
+  display: inline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: center;
+  background-color: whitesmoke;
+  width: 50%;
+}
+
+.curriculum .curriculum__boxcv .fotocurriculum img {
+  margin-left: 310px;
+  margin-top: 25px;
+  opacity: 80%;
+}
+
+.curriculum .curriculum__boxcv .textocurriculum {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: flex-start;
+  background-color: white;
+  font-size: 12px;
+  width: 50%;
+  padding: 20px;
+  border: 2px solid #3a3939;
+  margin-right: 100px;
+  margin-bottom: 4px;
+  border-radius: 40px;
+}
+
+.curriculum .curriculum__boxcv .textocurriculum button {
+  position: absolute;
+  top: 520px;
+  left: 350px;
+  width: 220px;
+  height: 40px;
+  border-radius: 30px;
+  padding-bottom: 0px;
+  border: 1px solid #2a2a2a;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  background-color: #e1b986;
+}
+
+.curriculum .curriculum__boxcv .textocurriculum button:hover {
+  background-color: #e18686;
+}
+
+.formulariocontacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: whitesmoke;
+  padding-top: 80px;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.formulariocontacto .tituloscontacto {
+  display: inline-block;
+  width: 60%;
+  margin-top: 100px;
+}
+
+.formulariocontacto .tituloscontacto h2 {
+  font-size: 25px;
+  color: black;
+}
+
+.formulariocontacto .tituloscontacto h3 {
+  font-size: 20px;
+  color: grey;
+}
+
+.formulariocontacto .formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin-top: 40px;
+}
+
+.formulariocontacto .formulario input {
+  border-radius: 20px;
+  width: 400px;
+  text-align: left;
+  font-size: 15px;
+  padding: 10px;
+  background-color: whitesmoke;
+}
+
+.formulariocontacto .formulario button {
+  position: relative;
+  top: -10px;
+  left: 300px;
+  width: 120px;
+  height: 40px;
+  display: inline;
+  border-radius: 30px;
+  padding-bottom: 0px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  opacity: 80%;
+  background-color: #e1b986;
+}
+
+.formulariocontacto .formulario button:hover {
+  background-color: orange;
+  border: 2px solid black;
 }
 /*# sourceMappingURL=styles.css.map */

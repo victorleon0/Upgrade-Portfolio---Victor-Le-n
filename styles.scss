@@ -44,18 +44,19 @@ body {
     }
     &__button {
         position: relative;
-        top: 20px;
+        top: 10px;
         right: 50px;
-        width: 120px;
+        width: 150px;
         height: 40px;
         display: inline;
         border-radius: 30px;
-        padding-bottom: 0px;
+        padding-top: 20px;
         border: 1px solid black;
         cursor: pointer;
         font-size: 18px;
         text-align: center;
         opacity: 80%;
+        text-decoration: none;
 
         &:hover {
             background-color: rgba(255, 179, 0, 0.891);
@@ -63,6 +64,7 @@ body {
 
         }
     }
+    
 
 }
 .portada{
@@ -234,7 +236,7 @@ body {
     justify-content: center;
     padding-top: 50px;
     width: 100vw;
-    height: 100vh;
+    height: 800px;
     gap: 30px;
     .titulos {
         position: flex;
@@ -404,4 +406,132 @@ body {
         }
     }
    
+}
+.curriculum {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: whitesmoke;
+
+    .titulos {
+        position: flex;
+        width: 100vw;
+        height: 20px;
+        text-align: center;
+        padding-top: 50px;
+        margin-bottom:100px;
+        h2 {
+            font-size: 50px;
+        }
+    }
+    .curriculum__boxcv{
+        display: flex;
+        flex-direction: row;
+        .fotocurriculum {
+            position: relative;
+            display: inline;
+            justify-content: flex-start;
+            text-align: center;
+            background-color: whitesmoke;
+            width: 50%;
+            img {
+                margin-left: 310px;
+                margin-top: 25px;
+                opacity: 80%;
+            }
+    
+        }
+        .textocurriculum {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: flex-start;
+            background-color: white;
+            font-size: 12px;
+            width: 50%;
+            padding: 20px;
+            border: 2px solid rgb(58, 57, 57);
+            margin-right: 100px;
+            margin-bottom: 4px;
+            border-radius: 40px;
+            button {
+                position: absolute;
+                top: 520px;
+                left: 350px;
+                width: 220px;
+                height: 40px;
+                border-radius: 30px;
+                padding-bottom: 0px;
+                border: 1px solid rgb(42, 42, 42);
+                cursor: pointer;
+                font-size: 18px;
+                text-align: center;
+                background-color: rgb(225, 185, 134);
+                &:hover {
+                    background-color: rgb(225, 134, 134);
+                }
+
+            }
+
+        }
+
+    }
+    
+}
+.formulariocontacto {
+    display: flex;
+    background-color: whitesmoke;
+    padding-top: 80px;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    .tituloscontacto {
+        display: inline-block;
+        width: 60%;
+        margin-top: 100px;
+        h2 {
+            font-size: 25px;
+            color: black
+        }
+        h3 {
+            font-size: 20px;
+            color: grey;
+        }
+
+    }
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-top: 40px;
+        input {
+            border-radius: 20px;
+            width:400px;
+            text-align: left;
+            font-size: 15px;
+            padding: 10px;
+            background-color: whitesmoke;
+        }
+        button {
+            position: relative;
+            top: -10px;
+            left: 300px;
+            width: 120px;
+            height: 40px;
+            display: inline;
+            border-radius: 30px;
+            padding-bottom: 0px;
+            border: 1px solid black;
+            cursor: pointer;
+            font-size: 18px;
+            text-align: center;
+            opacity: 80%;
+            background-color: rgb(225, 185, 134);
+            &:hover {
+                background-color: orange;
+                border: 2px solid black;
+            }
+        }
+    }
 }
