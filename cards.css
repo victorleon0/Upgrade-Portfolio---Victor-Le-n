@@ -1,5 +1,7 @@
 .misproyectos {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -7,12 +9,24 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: whitesmoke;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 20px;
   width: 100vw;
-  height: 800px;
+  height: 100vh;
+}
+
+.misproyectos .titulos {
+  position: flex;
+  width: 100vw;
+  height: 20px;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+.misproyectos .titulos h2 {
+  font-size: 50px;
 }
 
 .misproyectos .card {
