@@ -1,0 +1,95 @@
+.misproyectos {
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: whitesmoke;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+  width: 100vw;
+  height: 800px;
+}
+
+.misproyectos .card {
+  position: relative;
+  width: 220px;
+  height: 200px;
+  -webkit-perspective: 30rem;
+          perspective: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+
+.misproyectos .card .front, .misproyectos .card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.misproyectos .card .front {
+  background-color: #66ccff;
+}
+
+.misproyectos .card .front .tarjeta {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.misproyectos .card .back {
+  background-color: rgba(107, 106, 104, 0.891);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.misproyectos .card .back h5 {
+  font-size: 20px;
+  margin-bottom: 0px;
+  color: white;
+  text-align: center;
+}
+
+.misproyectos .card .back p {
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.misproyectos .card:hover .front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.misproyectos .card:hover .back {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+/*# sourceMappingURL=cards.css.map */
