@@ -147,7 +147,7 @@ body {
 .scrollicon__bounce1 {
   position: fixed;
   width: 90px;
-  bottom: 20px;
+  bottom: 60px;
   right: 20px;
   max-inline-size: 100%;
   min-block-size: var(--tds-icon--size);
@@ -500,7 +500,8 @@ body {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   background-color: whitesmoke;
-  height: 800px;
+  width: 100vw;
+  height: 900px;
 }
 
 .curriculum .titulos {
@@ -514,6 +515,7 @@ body {
 
 .curriculum .titulos h2 {
   font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .curriculum .curriculum__boxcv {
@@ -591,7 +593,7 @@ body {
   display: flex;
   background-color: whitesmoke;
   width: 100vw;
-  height: 100vh;
+  height: 400px;
   text-align: center;
 }
 
@@ -652,5 +654,71 @@ body {
 .formulariocontacto .formulario button:hover {
   background-color: orange;
   border: 2px solid black;
+}
+
+.footer {
+  position: relative;
+  bottom: 20px;
+  background-color: #353434;
+  width: 100vw;
+  height: 60px;
+  padding-top: 20px;
+}
+
+.footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  top: 5px;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.footer :hover img {
+  cursor: pointer;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -moz-animation-name: bounce;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
 }
 /*# sourceMappingURL=styles.css.map */
